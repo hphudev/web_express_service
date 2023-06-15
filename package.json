@@ -9,7 +9,7 @@
     "restart": "pm2 restart ecosystem.config.js",
     "stop": "pm2 stop express",
     "pm2list": "pm2 list",
-    "build": "babel-node index.js"
+    "build": "babel index.js -o dist/index.js"
   },
   "author": "",
   "license": "ISC",
