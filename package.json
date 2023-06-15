@@ -1,0 +1,29 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-pm2": "pm2 start ecosystem.config.js",
+    "restart": "pm2 restart ecosystem.config.js",
+    "stop": "pm2 stop express",
+    "pm2list": "pm2 list",
+    "build": "babel-node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "firebase": "^9.22.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "pm2": "^5.3.0"
+  }
+}
